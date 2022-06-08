@@ -1,0 +1,21 @@
+.form-button {
+	transition: 0.5s;
+	&:hover {
+		transform: scale(1.1);
+		background-color: #ab85bb;
+	}
+}
+
+.loading-icon {
+	animation: loading-keyframe infinite 1s linear;
+}
+
+@keyframes loading-keyframe {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}

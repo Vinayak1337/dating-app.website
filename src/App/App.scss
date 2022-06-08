@@ -1,0 +1,33 @@
+.app-body {
+	width: 100%;
+	height: 100%;
+	.main-group {
+		background: linear-gradient(180deg, #7b6391 0%, #4c2d66 100%);
+		height: 100%;
+		width: 100%;
+
+		.container {
+			width: 87%;
+			max-width: 1920px;
+			margin: auto;
+			height: 100%;
+		}
+
+		.main-group-container-class {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			margin-top: 95px;
+			height: 100%;
+			width: 100%;
+		}
+
+		.main-group-main-page-class {
+			margin-top: 145px;
+		}
+	}
+
+	.pa-btm {
+		padding-bottom: 150px;
+	}
+}

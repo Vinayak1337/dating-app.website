@@ -1,0 +1,140 @@
+.message-bar {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	display: flex;
+	flex-direction: column;
+
+	.closing-progress-container {
+		position: absolute;
+		top: 91%;
+		left: 0%;
+		display: flex;
+		align-items: center;
+		width: 100%;
+
+		.closing-progress-bar {
+			border-radius: 2px;
+			height: 3px;
+			width: 0%;
+			background: transparent;
+		}
+
+		@keyframes progress-keyframe {
+			0% {
+				width: 100%;
+			}
+
+			100% {
+				width: 0%;
+			}
+		}
+
+		.closing-progress-dot {
+			width: 5px;
+			height: 5px;
+			border-radius: 100%;
+			box-shadow: 0px 3px 10px 3px white;
+			background: transparent;
+			animation: closing-dot-keyframe 3s;
+			visibility: hidden;
+		}
+
+		@keyframes closing-keyframe {
+			from {
+				visibility: visible;
+			}
+
+			to {
+				visibility: hidden;
+			}
+		}
+	}
+
+	.message-bar-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: #e8e9eb;
+		padding: 10px 16px;
+		font-size: 0.875rem;
+		font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+		font-weight: 400;
+		line-height: 1.43;
+		border-radius: 4px;
+		border: 1px solid transparent;
+		width: fit-content;
+		white-space: nowrap;
+
+		.main-icon {
+			margin-right: 12px;
+		}
+
+		.close-icon {
+			margin-left: 12px;
+			cursor: pointer;
+		}
+
+		.icon {
+			fill: #e8e9eb;
+		}
+	}
+
+	.error {
+		.closing-progress-container {
+			.closing-progress-bar {
+				background: #fa877f;
+			}
+
+			.closing-progress-dot {
+				background: #f44336;
+			}
+		}
+		border-color: #f44336;
+		background: #f44336;
+	}
+
+	.warning {
+		.closing-progress-container {
+			.closing-progress-bar {
+				background: #ffce85;
+			}
+
+			.closing-progress-dot {
+				background: #ff9800;
+			}
+		}
+		border-color: #ff9800;
+		background: #ff9800;
+	}
+
+	.info {
+		.closing-progress-container {
+			.closing-progress-bar {
+				background: #83c3f8;
+			}
+
+			.closing-progress-dot {
+				background: #2196f3;
+			}
+		}
+		border-color: #2196f3;
+		background: #2196f3;
+	}
+
+	.success {
+		.closing-progress-container {
+			.closing-progress-bar {
+				background: #65dd69;
+			}
+
+			.closing-progress-dot {
+				background: #4caf50;
+			}
+		}
+
+		border-color: #4caf50;
+		background: #4caf50;
+	}
+}

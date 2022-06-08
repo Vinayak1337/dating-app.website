@@ -1,0 +1,78 @@
+.form-input-body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	label {
+		color: #ffffff;
+	}
+
+	input {
+		border: none;
+		outline: none;
+		padding: 10px 15px;
+		font-size: 18px;
+		line-height: 24px;
+		box-shadow: 0px 10px 10px rgba(0, 0, 0, .25);
+		border-radius: 12px;
+		color: grey;
+		font-weight: bold;
+		text-align: left;
+		margin: 10px 5px;
+		text-align: center;
+
+		&[type="email"] {
+			text-transform: lowercase;
+		}
+
+		&::placeholder {
+			color: grey;
+			font-weight: bold;
+			text-transform: capitalize;
+			text-align: center;
+		}
+
+		&:focus {
+			box-shadow: 0px 0px 10px 1px #3083ff;
+		}
+	}
+
+	.duplicate-box {
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+		padding: 10px 15px;
+		font-size: 18px;
+		line-height: 24px;
+		border-radius: 12px;
+		aspect-ratio: 20;
+		color: whitesmoke;
+		margin: 10px 5px;
+		box-shadow: 0px 13px 10px rgba(0, 0, 0, .25);
+		border: 2px solid whitesmoke;
+		cursor: pointer;
+
+		.icon {
+			text-align: left;
+		}
+
+		.text {
+			text-align: center;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+
+		.file-name {
+			width: 200px;
+		}
+
+		@media (max-width: 1000px) {
+			aspect-ratio: 15;
+		}
+
+		@media (max-width: 500px) {
+			aspect-ratio: 10;
+		}
+	}
+}

@@ -1,0 +1,76 @@
+.year-input-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+	top: 15px;
+	width: 100%;
+
+	.select-options-container {
+		position: absolute;
+		top: 95%;
+		left: 1%;
+		background: #7b6391;
+		color: white;
+		max-height: 0;
+		width: 100%;
+		opacity: 0;
+		transition: all 0.5s;
+		border-radius: 8px;
+		overflow: hidden;
+		order: 1;
+		z-index: 20;
+
+		&::-webkit-scrollbar {
+			width: 8px;
+			background: #000011;
+			border-radius: 0 8px 8px 0;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background: grey;
+			border-radius: 0 8px 8px 0;
+		}
+	}
+
+	.default-select-option {
+		padding: 12px;
+		cursor: pointer;
+		border: 2px solid white;
+		background: transparent;
+		border-radius: 8px;
+		margin-bottom: 8px;
+		color: white;
+		position: relative;
+		order: 0;
+		font-weight: 600;
+		font-size: 16px;
+		width: 100%;
+
+		&::after {
+			content: '';
+			background: url('../../../Assets/Images/Png/arrow_down.png');
+			transform: rotate(90deg);
+			background-repeat: no-repeat;
+			background-size: contain;
+			position: absolute;
+			height: 100%;
+			width: 32px;
+			right: 5px;
+			top: 8px;
+			transition: all .5s;
+			z-index: -1;
+		}
+	}
+
+	.select-input-isActive {
+		max-height: 240px;
+		opacity: 1;
+		overflow-y: scroll;
+	}
+
+	.select-input-isActive + .default-select-option::after {
+		transform: rotateX(180deg);
+		top: -8px;
+	}
+}

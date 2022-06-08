@@ -1,0 +1,18 @@
+.select-option-body {
+	padding: 12px;
+	cursor: pointer;
+
+	&:hover {
+		background: #5c377a;
+	}
+
+	label {
+		cursor: pointer;
+		font-weight: 600;
+		font-size: 16px;
+	}
+
+	.select-option-radio {
+		display: none;
+	}
+}

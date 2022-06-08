@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+a {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 24px;
+	color: #ffffff;
+	text-decoration: none;
+	transition: color 1s;
+}
+
+a:hover {
+	color: #ffffffb0;
+}
+
+button {
+	border: none;
+	outline: none;
+	color: #ffffff;
+	font-size: 18px;
+	line-height: 24px;
+	text-align: center;
+	color: #ffffff;
+	padding: 17px 15px;
+	background: #ccabda;
+	box-shadow: 0px 10px 10px rgb(0 0 0 / 25%);
+	border-radius: 12px;
+	cursor: pointer;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.skeleton {
+	animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.circle {
+	border-radius: 100%;
+}
+
+@keyframes skeleton-loading {
+	0% {
+		background-color: hsl(200, 2%, 50%);
+	}
+
+	100% {
+		background-color: hsl(200, 20%, 95%);
+	}
+}
