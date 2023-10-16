@@ -11,6 +11,7 @@ You can view the live version of the landing page [here](https://dating-app-land
 To set up a local copy of this project:
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/Vinayak1337/dating-app.website.git
    ```
