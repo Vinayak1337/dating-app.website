@@ -4,7 +4,7 @@ export const useLogger = (...params: any) => {
 	useEffect(() => console.log(...params), [params]);
 };
 
-export const baseUrl = 'https://dating-api-server.herokuapp.com';
+export const baseUrl = 'https://dating-app-server-gdjw.onrender.com';
 // export const baseUrl = 'http://localhost:5000';
 
 const callbacks: { key: string; cb: Function }[] = [];
