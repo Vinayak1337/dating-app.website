@@ -13,7 +13,7 @@ To set up a local copy of this project:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Vinayak1337/dating-app.website.git
+      git clone https://github.com/Vinayak1337/dating-app.website.git
    ```
 2. Navigate to the project directory:
   ```bash
