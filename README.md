@@ -1,6 +1,7 @@
 # Dating App Landing Page
 
 This repository contains the source code for the landing page of the Dating App. It serves as the primary point of entry for users and provides them with an overview of the application's features and benefits.
+Written in React, utilizing technologies such as TypeScript, Redux, React-Router.
 
 ## Live Demo
 
